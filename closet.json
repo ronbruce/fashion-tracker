@@ -1,0 +1,126 @@
+{
+    "categories": [
+        {
+            "id": "casual",
+            "name": "Casual",
+            "events": [
+                {
+                    "id": "hang_out",
+                    "name": "Hang Out",
+                    "price": { "min": 80.00, "max": 300}
+                },
+                {
+                    "id": "work",
+                    "name": "Work",
+                    "price-range": { "min": 50.00, "max": 130.00 }
+                },
+                {
+                    "id": "errands",
+                    "name": "Errands",
+                    "price-range": { "min": 50.00, "max": 130.00 }
+                },
+                {
+                    "id": "sleep",
+                    "name": "Sleep",
+                    "price-range": { "min": 50.00, "max": 130.00 }
+                }
+            ], 
+            "items": [
+                {
+                    "name": "Champion Sweater",
+                    "type": "Sweaters",
+                    "price": 80.00,
+                    "brand": "Champion"
+                },
+                {
+                    "name": "New Balance Sneakers",
+                    "type": "Sneakers",
+                    "price": 120.00,
+                    "brand": "New Balance"
+                }
+            ]
+        },
+        {
+            "id": "business_professional",
+            "name": "Business Professional",
+            "events": [
+                {
+                    "id": "business_dinner",
+                    "name": "Business Dinner",
+                    "price-range": { "min": 150.00, "max": 250.00 }
+                },
+                {
+                    "id": "interview",
+                    "name": "Interview",
+                    "price-range": { "min": 150.00, "max": 250.00 }
+                },
+                {
+                    "id": "church",
+                    "name": "Church",
+                    "price-range": { "min": 150.00, "max": 250.00 }
+                }
+            ],
+            "items": [
+                {
+                    "name": "Men's wear house Black Suit",
+                    "type": "Suits",
+                    "price": 1000.00,
+                    "brand": "Tom Ford"
+                }
+            ]
+        },
+        {
+            "id": "business_casual",
+            "name": "Business Casual",
+            "events": [
+                {
+                    "id": "interviews",
+                    "name": "Interviews",
+                    "price-range": { "min": 80.00, "max": 300.00 }
+                },
+                {
+                    "id": "dinner_dates",
+                    "name": "Dinner Dates",
+                    "price-range": { "min": 80.00, "max": 300.00 }
+                }
+            ],
+            "items": [
+                {
+                    "name": "Blazer",
+                    "type": "blazer",
+                    "price": 300,
+                    "brand": "H&M"
+                }
+            ]
+        },
+        {
+            "id": "athleisure",
+            "name": "Athleisure",
+            "events": [
+                {
+                    "id": "workout",
+                    "name": "Work Out",
+                    "price-range": { "min": 65.00, "max": 100.00 }
+                },
+                {
+                    "id": "yoga",
+                    "name": "Yoga",
+                    "price-range": { "min": 65.00, "max": 100.00 }
+                },
+                {
+                    "id": "gym",
+                    "name": "Gym",
+                    "price-range": { "min": 65.00, "max": 100.00 }
+                }
+            ],
+            "items": [
+                {
+                    "name": "Indoor Sweat Suit",
+                    "type": "Sweat Suit",
+                    "price": 100.00,
+                    "brand": "ASOS"
+                }
+            ]
+        }
+    ]
+}
