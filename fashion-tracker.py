@@ -19,18 +19,33 @@ closetlist = load_data()
 # Add a new item to the closet.
 # 'closetlist.append(item)' adds the 'item' provided as an argument to your 'closetlist'.
 def create(item):
-    closetlist.append(item)
+    if "categories" not in closetlist: # Checks to see if 'categories' key is present in 'closetlist'
+        closetlist["categories"] = [] # If no categories then create empty list
+    category = closetlist["categories"][0] # Access the first categories for demonstration.
+    category["items"].append(item)
+    save_data()
+
+# Function to save data back to 'closet.json'.
+def save_data():
+    with open('closet.json', 'w') as file:
+        json.dump(closetlist, file, indent=4)
+
+# Input an item to add to the closet.
+item = input("Hey! Enter the drip to add to your closet: ")
+create(item) # Call the create function to add to the item.
+
+print(f"{item} added to your closet.")
 
 # Test function. 
-def test():
-    # Load data from 'clothing.json'
-    data = load_data()
+# def test():
+#     # Load data from 'clothing.json'
+#     data = load_data()
 
-    # Use json.dumps with an indent to format the data for printing.
-    formatted_data = json.dumps(data, indent=4)
+#     # Use json.dumps with an indent to format the data for printing.
+#     formatted_data = json.dumps(data, indent=4)
 
-    # Display the loaded data
-    print(formatted_data)
+#     # Display the loaded data
+#     print(formatted_data)
 
-test()
+# test()
 
