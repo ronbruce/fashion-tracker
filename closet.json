@@ -7,36 +7,54 @@
                 {
                     "id": "hang_out",
                     "name": "Hang Out",
-                    "price": { "min": 80.00, "max": 300}
+                    "price": {
+                        "min": 80.0,
+                        "max": 300
+                    }
                 },
                 {
                     "id": "work",
                     "name": "Work",
-                    "price-range": { "min": 50.00, "max": 130.00 }
+                    "price-range": {
+                        "min": 50.0,
+                        "max": 130.0
+                    }
                 },
                 {
                     "id": "errands",
                     "name": "Errands",
-                    "price-range": { "min": 50.00, "max": 130.00 }
+                    "price-range": {
+                        "min": 50.0,
+                        "max": 130.0
+                    }
                 },
                 {
                     "id": "sleep",
                     "name": "Sleep",
-                    "price-range": { "min": 50.00, "max": 130.00 }
+                    "price-range": {
+                        "min": 50.0,
+                        "max": 130.0
+                    }
                 }
-            ], 
+            ],
             "items": [
                 {
                     "name": "Champion Sweater",
                     "type": "Sweaters",
-                    "price": 80.00,
+                    "price": 80.0,
                     "brand": "Champion"
                 },
                 {
                     "name": "New Balance Sneakers",
                     "type": "Sneakers",
-                    "price": 120.00,
+                    "price": 120.0,
                     "brand": "New Balance"
+                },
+                {
+                    "name": "Shoes",
+                    "type": "Boots",
+                    "price": 200.0,
+                    "brand": "Thursday"
                 }
             ]
         },
@@ -47,24 +65,33 @@
                 {
                     "id": "business_dinner",
                     "name": "Business Dinner",
-                    "price-range": { "min": 150.00, "max": 250.00 }
+                    "price-range": {
+                        "min": 150.0,
+                        "max": 250.0
+                    }
                 },
                 {
                     "id": "interview",
                     "name": "Interview",
-                    "price-range": { "min": 150.00, "max": 250.00 }
+                    "price-range": {
+                        "min": 150.0,
+                        "max": 250.0
+                    }
                 },
                 {
                     "id": "church",
                     "name": "Church",
-                    "price-range": { "min": 150.00, "max": 250.00 }
+                    "price-range": {
+                        "min": 150.0,
+                        "max": 250.0
+                    }
                 }
             ],
             "items": [
                 {
                     "name": "Men's wear house Black Suit",
                     "type": "Suits",
-                    "price": 1000.00,
+                    "price": 1000.0,
                     "brand": "Tom Ford"
                 }
             ]
@@ -76,12 +103,18 @@
                 {
                     "id": "interviews",
                     "name": "Interviews",
-                    "price-range": { "min": 80.00, "max": 300.00 }
+                    "price-range": {
+                        "min": 80.0,
+                        "max": 300.0
+                    }
                 },
                 {
                     "id": "dinner_dates",
                     "name": "Dinner Dates",
-                    "price-range": { "min": 80.00, "max": 300.00 }
+                    "price-range": {
+                        "min": 80.0,
+                        "max": 300.0
+                    }
                 }
             ],
             "items": [
@@ -100,24 +133,33 @@
                 {
                     "id": "workout",
                     "name": "Work Out",
-                    "price-range": { "min": 65.00, "max": 100.00 }
+                    "price-range": {
+                        "min": 65.0,
+                        "max": 100.0
+                    }
                 },
                 {
                     "id": "yoga",
                     "name": "Yoga",
-                    "price-range": { "min": 65.00, "max": 100.00 }
+                    "price-range": {
+                        "min": 65.0,
+                        "max": 100.0
+                    }
                 },
                 {
                     "id": "gym",
                     "name": "Gym",
-                    "price-range": { "min": 65.00, "max": 100.00 }
+                    "price-range": {
+                        "min": 65.0,
+                        "max": 100.0
+                    }
                 }
             ],
             "items": [
                 {
                     "name": "Indoor Sweat Suit",
                     "type": "Sweat Suit",
-                    "price": 100.00,
+                    "price": 100.0,
                     "brand": "ASOS"
                 }
             ]

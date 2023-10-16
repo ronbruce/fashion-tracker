@@ -14,38 +14,44 @@ def load_data():
 # Initialize closetlist with data from 'closet.json'.
 # closetlist contains the data from the 'closet.json' file.
 closetlist = load_data()
-closetlist = load_data()
+
 
 # Add a new item to the closet.
 # 'closetlist.append(item)' adds the 'item' provided as an argument to your 'closetlist'.
-def create(item):
-    if "categories" not in closetlist: # Checks to see if 'categories' key is present in 'closetlist'
-        closetlist["categories"] = [] # If no categories then create empty list
-    category = closetlist["categories"][0] # Access the first categories for demonstration.
-    category["items"].append(item)
-    save_data()
+def create_item():
+    category = input("Hey! Enter the category (e.g. casual, business casual, business professional)")
+    name = input("Now enter the name of the item: ")
+    item_type = input("Enter the type of the item: ")
+    price = float(input("Enter the price of the item: "))
+    brand = input("Enter the brand of the item: ")
 
-# Function to save data back to 'closet.json'.
+    new_item = {
+        "name": name,
+        "type": item_type,
+        "price": price,
+        "brand": brand
+    }
+
+
+    for category_data in closetlist["categories"]:
+        if category_data["id"] == category:
+            category_data["items"].append(new_item)
+            save_data()
+            print(f"{name} added to the {category} category.")
+
+
 def save_data():
     with open('closet.json', 'w') as file:
         json.dump(closetlist, file, indent=4)
 
-# Input an item to add to the closet.
-item = input("Hey! Enter the drip to add to your closet: ")
-create(item) # Call the create function to add to the item.
+def main():
+    while True:
+        create_item()
+        another_item = input("Good looks! Would you like to put some more drip in your closet? (yes/no)? ").lower()
+        if another_item != "yes":
+            break
+    
+if __name__ == "__main__":
+    main()
 
-print(f"{item} added to your closet.")
-
-# Test function. 
-# def test():
-#     # Load data from 'clothing.json'
-#     data = load_data()
-
-#     # Use json.dumps with an indent to format the data for printing.
-#     formatted_data = json.dumps(data, indent=4)
-
-#     # Display the loaded data
-#     print(formatted_data)
-
-# test()
 
